@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .result-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .annotated-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 75%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .try-another {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .try-another:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Real-world Dimensions Result</h1>
+        <p class="result-info">Diameter of the circular object is: {{ distance }} mm</p>
+        <img src="{{ annotated_image }}" alt="Annotated Image" class="annotated-img">
+        <a href="/" class="try-another">Try Another</a>
+        <footer>
+            <p><center>Created by: Nagur Shareef Shaik, 002763331</center></p>
+        </footer>
+    </div>
+</body>
+</html>

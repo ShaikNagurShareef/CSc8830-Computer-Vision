@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Object Dimensions Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Real-world Dimensions Calculator</h1>
+        <form method="POST" enctype="multipart/form-data" action="/process_image" class="form">
+            <label for="fileInput" class="file-label">Choose an image:</label>
+            <input type="file" name="file" id="fileInput" accept="image/*" class="file-input">
+            <button type="submit" class="submit-btn">Calculate Dimensions</button>
+        </form>
+        <footer>
+            <p><center>Created by: Nagur Shareef Shaik, 002763331</center></p>
+        </footer>
+    </div>
+    
+</body>
+</html>
