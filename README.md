@@ -10,3 +10,8 @@ Assignment - 2
 
   - Solutions are provided in Assignment-2.ipynb Jupyter Notebook & webapp is designed using Python Flask framework
   - To launch web-app execute "python app.py", you can see the app running at http://127.0.0.1:5000/
+
+Assignment - 3
+
+  - Solutions are provided in Assignment-3.ipynb Jupyter Notebook. Some of the questions were answered in matlab in dedicated files with .m extension
+
