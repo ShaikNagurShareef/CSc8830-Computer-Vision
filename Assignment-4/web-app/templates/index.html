@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSc 8830: Computer Vision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">CSc 8830: Computer Vision - Assignments</h1>
+        <h2 class="title">1 (4): Circular Object Dimensions Calculator</h2>
+        <form method="POST" enctype="multipart/form-data" action="/process_image" class="form" name="ObjectDimensions">
+            <label>Upload an image containing a circular object:</label>
+            <label for="fileInput1" class="file-label">Choose an image</label>
+            <input type="file" name="file" id="fileInput1" accept="image/*" class="file-input">
+            <button type="submit" class="submit-btn">Calculate Dimensions</button>
+        </form>
+        <h2 class="title">2 (4): Integral Image Computer</h2>
+        <form method="POST" enctype="multipart/form-data" action="/stream_rgb_integral_imgs" class="form" name="ImageIntegral">
+            <label>Upload an RGB image:</label>
+            <label for="fileInput2" class="file-label">Choose an image</label>
+            <input type="file" name="image" id="fileInput2" accept="image/*" class="file-input">
+            <button type="submit" class="submit-btn">Compute Image Integral</button>
+        </form>
+        <h2 class="title">2 (5): Image Stitching</h2>
+        <form action="/stitch" method="post" enctype="multipart/form-data" class="form" name="ImageStitching">
+            <label>Upload multiple images to stitch:</label>
+            <label for="fileInput3" class="file-label">Choose multiple image</label>
+            <input type="file" name="images" id="fileInput3" accept="image/*" multiple class="file-input">
+            <button type="submit" class="submit-btn">Stitch Images</button>
+        </form>
+        <h2 class="title">4 (1): Object Tracking, Recognition & Dimensions Estimation</h2>
+        <form action="/object_detection" method="post" enctype="multipart/form-data" class="form" name="ImageStitching">
+            <label>Click-on the button to start the Video Streaming</label>
+            <br><br>
+            <button type="submit" class="submit-btn">Start Streaming</button>
+        </form>
+        <footer>
+            <p><center>Created by: Nagur Shareef Shaik, 002763331</center></p>
+        </footer>
+    </div>
+    
+</body>
+</html>

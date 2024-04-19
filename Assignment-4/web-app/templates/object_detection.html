@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Tracking & Recognition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container-1 {
+            position: relative;
+            width: 100%; /* Adjust this as needed */
+            max-width: 100%; /* Adjust this as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .video-container-2 {
+            position: relative;
+            width: 100%; /* Adjust this as needed */
+            max-width: 100%; /* Adjust this as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .result-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .annotated-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 75%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .try-another {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .try-another:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Real-time Object Tracking, Recognition & Dimensions Estimation</h1>
+    <h2 class="title">Stereo Vision (Right & Left)</h2>
+    <div class="id=video-container-1">
+        <img src="{{ url_for('video_stream') }}" width="1080" height="640" class="annotated-img">
+    </div>
+    <h2 class="title">Object Recognition - RGB (Webcam)</h2>
+    <div class="id=video-container-2">
+        <img src="{{ url_for('detect_objects_video_stream') }}" width="1080" height="640" class="annotated-img">
+    </div>
+    <a href="/" class="try-another">Try Another</a>
+    <footer>
+        <p><center>Created by: Nagur Shareef Shaik, 002763331</center></p>
+    </footer>
+</body>
+</html>
