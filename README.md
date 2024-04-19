@@ -13,5 +13,9 @@ Assignment - 2
 
 Assignment - 3
 
-  - Solutions are provided in Assignment-3.ipynb Jupyter Notebook. Some of the questions were answered in matlab in dedicated files with .m extension
+  - Solutions are provided in Assignment-3.ipynb Jupyter Notebook. Some of the questions were answered in matlab in dedicated files with .m extension & live matlab script is also provided as pdf file
 
+Assignment - 4
+
+  - Solutions are provided in Assignment-4.ipynb Jupyter Notebook & webapp is designed using Python Flask framework
+  - To launch web-app execute "python app.py", you can see the app running at http://127.0.0.1:5000/
