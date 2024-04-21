@@ -446,7 +446,7 @@ def stitch_images():
         return render_template('error.html', message="No images uploaded.")
     
 def process_feed():
-    object_width = 2.24
+    object_width = 0.995
     try:
         # Create object tracker instance
         tracker = ObjectTracker()
@@ -596,7 +596,7 @@ def video_stream():
 
 
 def process_objects_feed():
-    object_width = 2.24
+    object_width = 0.995
     try:
         # Create object tracker instance
         tracker = ObjectTracker()
