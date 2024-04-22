@@ -3,6 +3,17 @@ CSc 8830: Computer Vision Course Assignments
 
 This repository contains solutions to multiple assignments along with web applications developed using the Python Flask framework.
 
+## Requirements
+- Python (version >= 3.0)
+- Flask (install using `pip install Flask`)
+- OpenCV (install using `pip install opencv-python`)
+- NumPy (install using `pip install numpy`)
+- SciPy (install using `pip install scipy`)
+- Matplotlib (install using `pip install matplotlib`)
+- qrcode (install using `pip install qrcode`)
+- imutils (install using `pip install imutils`)
+- depthai (install using `pip install depthai`)
+
 ## Assignment-1
 - Solutions are provided in the Assignment-1.ipynb Jupyter Notebook.
 - The web application is designed using the Python Flask framework.
